@@ -149,7 +149,7 @@ img {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 }
 .menu {
-  display: inline;
+  display: inline-flex;
 }
 
 .menu li {
@@ -158,23 +158,36 @@ img {
 }
 
 .menu li a {
-  display: flex;
   padding: 10px;
   margin-bottom: 5px;
   font-size: 24px;
-  display: inline-block;
+  display: inline-flex;
 }
 .menu li a:hover {
   background-color: #ccc;
 }
 .logo {
   margin: 0px;
- 
+ display: inline-flex;
 }
 
 .logo img{
   width: 100px;
   height: 100px;
+}
+
+div.voltar > a{
+  display: inline-flex;
+  text-decoration: none;
+  color: var();
+  border: 3px solid var(--sair-color);
+  background-color: var(--light-bg);
+  border-radius: 10px;
+  padding: 10px;
+}
+div.voltar > a:hover{
+  background-color: var(--sair-bg);
+  color: white;
 }
 
 /*sidebar*/
@@ -271,18 +284,7 @@ section.fundo > h1{
   text-align: center;
 }
 
-div.voltar > a{
-  text-decoration: none;
-  color: var();
-  border: 3px solid var(--sair-color);
-  background-color: var(--light-bg);
-  border-radius: 10px;
-  padding: 10px;
-}
-div.voltar > a:hover{
-  background-color: var(--sair-bg);
-  color: white;
-}
+
 
 /* Slideshow container */
 .slideshow-container {
