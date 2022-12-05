@@ -250,6 +250,9 @@ div.voltar > a:hover{
   .logo img{
     display: none;
   }
+  section.fundo > div.org > p{
+    font-size: 1.0rem;
+  }
 }
 
 section.fundo{
