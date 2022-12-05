@@ -154,7 +154,7 @@ img {
 
 .menu li {
   margin: auto;
-  display: inline;
+  display: inline-flex;
 }
 
 .menu li a {
@@ -242,11 +242,13 @@ div.voltar > a:hover{
   }
 }
 
-/*@media (max-width: 499px){
+/*
+@media (max-width: 499px){
   .logo img{
     display: none;
   }
-}*/
+}
+*/
 
 section.fundo{
     display: flex;
@@ -264,17 +266,20 @@ section.fundo{
 }
 
 section.fundo > div.org{
-  display: block;
+  display:inline-block;
+  overflow-wrap: break-word;
   padding: 10px;
   margin: auto;
 }
 section.fundo > div.links{
-  display: block;
+  display: inline-block;
+  overflow-wrap: break-word;
   padding: 10px;
   margin: auto;
 }
 section.fundo > div.opcao{
-  display:table-column;
+  display:inline-block;
+  overflow-wrap: break-word;
   padding: 10px;
   margin: auto;
 }
