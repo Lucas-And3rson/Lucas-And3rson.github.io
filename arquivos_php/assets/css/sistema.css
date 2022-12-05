@@ -229,7 +229,7 @@ div.voltar > a:hover{
   }
 }
 
-@media (min-width: 500px ) and (max-width: 540px){
+@media (max-width: 540px){
   p{
     font-size: 1.1rem;
   }
