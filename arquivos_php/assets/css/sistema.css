@@ -149,26 +149,26 @@ img {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 }
 .menu {
-  display: inline-flex;
+  display: flex;
 }
 
 .menu li {
   margin: auto;
-  display: inline-flex;
+  display: inline;
 }
 
 .menu li a {
+  display: block;
   padding: 10px;
   margin-bottom: 5px;
   font-size: 24px;
-  display: inline-flex;
+  display: inline-block;
 }
 .menu li a:hover {
   background-color: #ccc;
 }
 .logo {
   margin: 0px;
- display: inline-flex;
 }
 
 .logo img{
@@ -229,7 +229,7 @@ div.voltar > a:hover{
   }
 }
 
-@media (max-width: 540px){
+@media (min-width: 500px) and (max-width: 540px){
   p{
     font-size: 1.1rem;
   }
@@ -242,13 +242,11 @@ div.voltar > a:hover{
   }
 }
 
-/*
 @media (max-width: 499px){
   .logo img{
     display: none;
   }
 }
-*/
 
 section.fundo{
     display: flex;
@@ -266,30 +264,11 @@ section.fundo{
 }
 
 section.fundo > div.org{
-  display:inline-block;
+  display: block;
   overflow-wrap: break-word;
   padding: 10px;
   margin: auto;
 }
-section.fundo > div.links{
-  display: inline-block;
-  overflow-wrap: break-word;
-  padding: 10px;
-  margin: auto;
-}
-section.fundo > div.opcao{
-  display:inline-block;
-  overflow-wrap: break-word;
-  padding: 10px;
-  margin: auto;
-}
-
-section.fundo > h1{
-  margin-top: 10px;
-  text-align: center;
-}
-
-
 
 /* Slideshow container */
 .slideshow-container {
