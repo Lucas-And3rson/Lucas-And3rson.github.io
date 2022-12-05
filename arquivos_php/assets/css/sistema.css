@@ -229,12 +229,6 @@ img {
   }
 }
 
-@media(max-width: 499px){
-  .logo img{
-    display: none;
-  }
-}
-
 section.fundo{
     display: flex;
     -ms-flex-align: center;
