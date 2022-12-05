@@ -1,4 +1,4 @@
-<!-- <?php
+ <!--<?php
     session_start();
 
     include_once('config.php');
@@ -11,7 +11,7 @@
       header('Location: login.php');
   }
   $logado = $_SESSION['email'];
-?>  -->
+?> -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -19,13 +19,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/sistema.css" />
-    <title>Bookflix</title>
+    <title>Nankurunaisa Livros</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   </head>
   <body>
     <header class="header">
-      <a href="/">Logo</a>
+      <div class="logo">
+        <img src="assets/img/logo.png">
+      </div>
       <nav>
         <ul class="menu">
         <li><a href = "#topico 1"> Inicio </a> </li>
@@ -34,13 +38,17 @@
         </ul>
       </nav>
       <div>
-        <a href="sair.php">Sair</a>
-      </div>
+
+        <div class="voltar">
+                  <a href="sair.php" class="btn btn-danger me-5"><i class="fas fa-sign-out-alt"></i>Sair</a>
+        </div>
+
     </header>
 
-    <!-- <?php
+     <!--<?php
         echo "<h1>Bem vindo(a) <u>$logado</u></h1>";
         ?> -->
+        
         <br>
    <div> <a name = "topico 1"></a>
     <h1>Inicio</h1>
@@ -57,13 +65,13 @@
   
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <a href="paginas/opequenoprincipe.php"><img src="assets/img/infantis/o pequeno principe.jpeg" alt="imagem3" style="width: 500px; height: 680px;"></a>
+      <a href="paginas/opequenoprincipe.php"><img src="assets/img/infantis/o pequeno principe.jpeg" alt="imagem2" style="width: 500px; height: 680px;"></a>
       <div class="text">Livro 2</div>
     </div>
   
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
-      <a href="paginas/agarotadolago.php"><img src="assets/img/misterio/a garota do lago.jpeg" alt="imagem2" style="width: 500px; height: 680px;"></a>
+      <a href="paginas/agarotadolago.php"><img src="assets/img/misterio/a garota do lago.jpeg" alt="imagem3" style="width: 500px; height: 680px;"></a>
       <div class="text">Livro 3</div>
     </div>
   
@@ -86,7 +94,7 @@
         <h1> Gênero </h1>
         <div id="romance">
           <h2>Romance</h2>
-    <section class="flex">
+    <section>
             <div class = "sidebar">
             <div>
             <img src="assets/img/romance/a culpa é das estrelas.jpeg" width="250px" height="275px">
@@ -113,7 +121,7 @@
         </div>
         <div id="ficcao">
           <h2>Fantasia</h2>
-          <section class="flex">
+          <section>
             <div class = "sidebar">
               <div>
               <img src="assets/img/fantasia/sussurro.jpeg" width="250px" height="275px">
@@ -140,7 +148,7 @@
         </div>
         <div id="sociologia">
           <h2>Sociologia</h2>
-          <section class="flex">
+          <section>
             <div class = "sidebar">
               <div>
               <img src="assets/img/sociologia/a origem da familia....jpg" width="250px" height="275px">
@@ -167,7 +175,7 @@
         </div>
         <div id="terror">
           <h2>Terror</h2>
-          <section class="flex">
+          <section>
               <div class = "sidebar">
               <div>
               <img src="assets/img/terror/it a coisa.jpg.webp" width="250px" height="275px">
@@ -194,7 +202,7 @@
         </div>
         <div id="infantil">
           <h2>Infantil</h2>
-          <section class="flex">
+          <section>
             <div class = "sidebar">
                 <div>
                 <img src="assets/img/infantis/a cigarra e a formiga.jpg" width="250px" height="275px">
@@ -222,7 +230,7 @@
       </div>
       <div id="misterio">
         <h2>Mistério</h2>
-        <section class="flex">
+        <section>
           <div class = "sidebar">
             <div>
             <img src="assets/img/misterio/a garota do lago.jpeg" width="250px" height="275px">
@@ -249,29 +257,34 @@
       </div>
     </div>
       <!-- Até aqui estão os gêneros -->
-
-    <a name = "topico 3">
     
-    <section class="fundo">
       <a name = "topico 4">
-      <h1> Sobre </h1>
-      <div class="org">
-        <h2> Desenvolvedores:<h2><br>
-        <p>
-        - Antonio Nunes; <br>
-        - Flavia Manuelly; <br>
-        - Lucas Anderson; <br>
-        - Yan Santos Torres;
-        </p>
-      </div>
-      
-    </section>
-    
-    
+        <section class="fundo">
+          <div class="org">
+            <p>
+              <b>DESENVOLVEDORES</b><br>
+            - Antonio Nunes; <br>
+            - Flavia Manuelly; <br>
+            - Lucas Anderson; <br>
+            - Yan Torres;
+            </p>
+          </div>
+          <div class="links">
+           <p><i class='fab fa-facebook'></i> Facebook</p>
+           <p><i class='fab fa-instagram'></i> Instagram</p>
+           <p><i class="fa fa-envelope"></i> Gmail</p>
+          </div>
+          <div class="opcao">
+            <p><u>Idiomas</u></p>
+            <p><u>Acessibilidade</u></p>
+            <p><u>Termos de uso</u></p>
+            <p><u>Privacidade</u></p>
+          </div>
+          <div class="icon"><i class="fa-regular fa-moon"></i></div>
+          <div class="icon2"><i class="fa-regular fa-sun"></i></div>
+        </section>
 
-  </body>
-</html>
-        <script src = "script.js">
-        </script>
+        <script src = "script.js"></script>
+        <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/*Modo dark-------------------------------*/
+
+:root{
+  --p-color: #111;
+  --sair-bg: #8b0000;
+  --sair-color: #800000;
+  --body-bg: #f5f5f5;
+  --light-bg: #dcdcdc;
+  --letra-color: #8b0000;
+  --btn-color: #800000;
+  --box-bg: #000;
+  --borda-color: #1a1919;
+}
+.dark:root{
+  --p-color: #f5f5f5;
+  --sair-bg: #8b0000;
+  --sair-color: #800000;
+  --body-bg: #111;
+  --light-bg: #1a1919;
+  --letra-color: #f5f5f5;
+  --btn-color: #f5f5f5;
+  --box-bg: #f5f5f5;
+  --borda-color: #dcdcdc;
+  }
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+.icon{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--light-bg);
+  position: absolute;
+  margin-top: 1%;
+  right: 1%;
+  border: 2px solid var(--borda-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .icon:hover{
+    background-color: var(--box-bg);
+  }
+  
+  .icon2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--light-bg);
+    position: absolute;
+    margin-top: 1%;
+    right: 1%;
+    border: 2px solid var(--borda-color);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .icon2:hover{
+      background-color: var(--box-bg);
+    }
+
+      .icon2{
+          display: none;
+      }
+      .icon2 i::before{
+      color: orange;
+      font-size: 20px;
+  }
+  .icon i::before{
+      color: orange;
+      font-size: 20px;
+  }
+  
+  
+  html.dark .icon{
+      display: none;
+  }
+  
+  html.dark .icon2{
+      display: flex;
+  }
+/*-----------------------------*/
+
+body,
+ul,
+li{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+  color: var(--letra-color);
+}
+
+p{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+  color: var(--p-color);
+}
+body {
+  /*background-image: linear-gradient(to right, #660000, #990000);*/
+  background-color: var(--body-bg);
+  /*background-image: linear-gradient(to right, #49a09d, #13349e);*/
+  margin-bottom: 100px; 
+  transition: all 0.2s linear;
+}
+
+a {
+  text-decoration: none;
+  color: var(--letra-color);
+}
+
+h1 {
+  text-align: center;
+  color: var(--letra-color);
+}
+
+h2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  color: var(--letra-color);
+}
+
+img {
+  max-width: 100%;
+  display: flex;
+}
+.header {
+  background: var(--light-bg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+}
+.menu {
+  display: inline;
+}
+
+.menu li {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 24px;
+  display: inline-block;
+}
+.menu li a:hover {
+  background-color: #ccc;
+}
+.logo {
+  margin: 0px;
+ 
+}
+
+.logo img{
+  width: 100px;
+  height: 100px;
+}
+
+/*sidebar*/
+.sidebar {
+  display: flex;
+  background-color: var(--light-bg);
+  overflow: scroll;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px #000;
+}
+.sidebar > div {
+  flex: 1 0 200px;
+  margin: 0 10px;
+}
+
+.sidebar img{
+  border-color: rgba(0, 0, 0, 0.450);
+}
+.sidebar img:hover{
+  background-color: rgba(0, 0, 0, 0.450);
+  box-shadow: 0px 0px 10px var(--box-bg);
+}
+/*sidebar para desktop*/
+@media (min-width: 1130px){
+  .sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px var(--box-bg);
+    overflow: hidden;
+  }
+  
+  .sidebar > div {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 540px){
+  p{
+    font-size: 1.1rem;
+  }
+  .menu > li > a{
+    font-size: 21px;
+  }
+  .logo img{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+section.fundo{
+    display: flex;
+    -ms-flex-align: center;
+    overflow: hidden;
+    margin-left: 50%;
+    margin-top: 400px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    background-color: var(--light-bg);
+    width: 100%;
+    height: 300px;
+    box-shadow: 0px 0px 10px var(--box-bg);
+    transform: translate(-50%, -50%);
+}
+
+section.fundo > div.org{
+  display: block;
+  padding: 10px;
+  margin: auto;
+}
+section.fundo > div.links{
+  display: block;
+  padding: 10px;
+  margin: auto;
+}
+section.fundo > div.opcao{
+  display:table-column;
+  padding: 10px;
+  margin: auto;
+}
+
+section.fundo > h1{
+  margin-top: 10px;
+  text-align: center;
+}
+
+div.voltar > a{
+  text-decoration: none;
+  color: var();
+  border: 3px solid var(--sair-color);
+  background-color: var(--light-bg);
+  border-radius: 10px;
+  padding: 10px;
+}
+div.voltar > a:hover{
+  background-color: var(--sair-bg);
+  color: white;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  margin: auto;
+  background: url("../img/background1.png");
+  box-shadow: 0px 0px 10px var(--box-bg);
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  align-items: center;
+
+}
+.mySlides img{
+  margin: auto;
+  border-color: var(--btn-color);
+}
+.mySlides img:hover{
+  box-shadow: 0px 0px 10px var(--light-bg);
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #bbb;
+}
+
+/* Caption text */
+.text {
+  color: var(--btn-color);
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
