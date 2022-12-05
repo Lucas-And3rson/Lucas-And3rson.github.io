@@ -153,12 +153,12 @@ img {
 }
 
 .menu li {
-  margin-left: 10px;
-  display: inline-block;
+  margin: auto;
+  display: inline;
 }
 
 .menu li a {
-  display: block;
+  display: flex;
   padding: 10px;
   margin-bottom: 5px;
   font-size: 24px;
@@ -226,6 +226,12 @@ img {
   .logo img{
     width: 80px;
     height: 80px;
+  }
+}
+
+@media (max-width: 499px){
+  .logo img{
+    display: none;
   }
 }
 
