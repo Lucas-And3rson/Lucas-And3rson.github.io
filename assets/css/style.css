@@ -92,19 +92,6 @@ div.campo > i {
     width: 40px;
     padding: 5px;
 }
-/*icone mostrar e esconder senha*/
-#icon{
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    background: url('../img/show.png');
-    background-size: cover;
-    font-size: 1.9em;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
 
 div.campo > input {
     background-color: #94cfcd;
