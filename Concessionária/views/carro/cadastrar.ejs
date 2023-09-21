@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Carros</title>
+</head>
+<body>
+    <%- include("../partials/cabeçalho.ejs") %>  
+    <div class="formulario">
+     <form action="/carros" method="POST">
+        <h3>CADASTRAR</h3>
+        <label for="id">ID</label><br>
+        <input type="number" id="id" name="id" required><br>
+        <label for="nome">Nome</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="marca">Marca</label><br>
+        <input type="text" id="marca" name="marca"><br>
+        <label for="ano">Ano</label><br>
+        <input type="number" id="ano" name="ano"><br>
+        <input type="submit" class="btn-cadastrar" value="Cadastrar">
+    </form>
+    </div>
+    <%- include("../partials/rodape.ejs") %>
+</body>
+</html>

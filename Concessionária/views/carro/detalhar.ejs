@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Carro</title>
+</head>
+<body>
+    <%- include("../partials/cabeçalho.ejs") %>
+    <div>
+        <h3>Detalhes do carro:</h3>
+    </div><br>
+    <div>
+        <b>id:</b> <%=c.id%><br>
+    </div>
+    <div>
+        <b>Nome:</b><%=c.nome%><br>
+    </div>
+    <div>
+        <b>Marca: </b> <%=c.marca%><br>
+    </div>
+    <div>
+        <b>Ano: </b> <%=c.ano%>
+    </div>
+    <%- include("../partials/rodape.ejs") %>
+</body>
+</html>

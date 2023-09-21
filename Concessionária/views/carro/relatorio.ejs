@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Carros</title>
+</head>
+<body>  
+    <%- include("../partials/cabeçalho.ejs") %>
+    <table>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Marca</th>
+        <th>Ano</th>
+        <th>Detalhar</th>
+        <% for (const c of carros) {%>
+            <tr>
+                <td><%=c.id%></td>
+                <td><%=c.nome%></td>
+                <td><%=c.marca%></td>
+                <td><%=c.ano%></td>
+                <td><a href="/carro/<%=c.id%>">Detalhar</a></td>
+            </tr>
+        <% } %>
+    </table>
+        <%- include("../partials/rodape.ejs") %>
+</body>
+</html>
+
+         

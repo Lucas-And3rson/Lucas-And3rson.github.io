@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Auxiliares de Venda</title>
+</head>
+<body>  
+    <%- include("../partials/cabeçalho.ejs") %>
+    <table>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Detalhar</th>
+        <% for (const a of auxiliares) {%>
+            <tr>
+                <td><%=a.id%></td>
+                <td><%=a.nome%></td>
+                <td><%=a.idade%></td>
+                <td><a href="/auxiliar/<%=a.id%>">Detalhar</a></td>
+            </tr>
+        <% } %>
+    </table>
+        <%- include("../partials/rodape.ejs") %>
+</body>
+</html>
+
+         

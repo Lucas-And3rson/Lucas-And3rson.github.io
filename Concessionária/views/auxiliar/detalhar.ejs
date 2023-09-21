@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Auxiliar</title>
+</head>
+<body>
+    <%- include("../partials/cabeçalho.ejs") %>
+    <div>
+        <h3>Detalhes do Auxiliar de Venda:</h3>
+    </div><br>
+    <div>
+        <b>id:</b> <%=a.id%><br>
+    </div>
+    <div>
+        <b>Nome:</b><%=a.nome%><br>
+    </div>
+    <div>
+        <b>Idade: </b> <%=a.idade%><br> <br>
+    </div>
+    <%- include("../partials/rodape.ejs") %>
+</body>
+</html>
