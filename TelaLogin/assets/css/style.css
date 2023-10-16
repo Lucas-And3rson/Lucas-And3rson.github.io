@@ -13,12 +13,6 @@
     box-sizing: border-box;
 }
 
-body, html {
-    background-color: #13349e;
-    height: 100vh;
-    width: 100vw;
-}
-
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 1,
